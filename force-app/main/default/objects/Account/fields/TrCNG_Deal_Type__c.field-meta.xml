@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TrCNG_Deal_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Deal Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A (Own &amp; Operate, criteria met)</fullName>
+                <default>false</default>
+                <label>A (Own &amp; Operate, criteria met)</label>
+            </value>
+            <value>
+                <fullName>A– (Own &amp; Operate, criteria not met)</fullName>
+                <default>false</default>
+                <label>A– (Own &amp; Operate, criteria not met)</label>
+            </value>
+            <value>
+                <fullName>B (Station sale with O&amp;M, criteria met)</fullName>
+                <default>false</default>
+                <label>B (Station sale with O&amp;M, criteria met)</label>
+            </value>
+            <value>
+                <fullName>B– (Station sale with O&amp;M, criteria not met)</fullName>
+                <default>false</default>
+                <label>B– (Station sale with O&amp;M, criteria not met)</label>
+            </value>
+            <value>
+                <fullName>C ( Station sale with O&amp;M, public access with royalty)</fullName>
+                <default>false</default>
+                <label>C ( Station sale with O&amp;M, public access with royalty)</label>
+            </value>
+            <value>
+                <fullName>D (Station sale with O&amp;M, backlot)</fullName>
+                <default>false</default>
+                <label>D (Station sale with O&amp;M, backlot)</label>
+            </value>
+            <value>
+                <fullName>E (O&amp;M on existing station)</fullName>
+                <default>false</default>
+                <label>E (O&amp;M on existing station)</label>
+            </value>
+            <value>
+                <fullName>L (Equipment lease)</fullName>
+                <default>false</default>
+                <label>L (Equipment lease)</label>
+            </value>
+            <value>
+                <fullName>P (Fuel sale at public site)</fullName>
+                <default>false</default>
+                <label>P (Fuel sale at public site)</label>
+            </value>
+            <value>
+                <fullName>Part Sales</fullName>
+                <default>false</default>
+                <label>Part Sales</label>
+            </value>
+            <value>
+                <fullName>O (Other)</fullName>
+                <default>false</default>
+                <label>O (Other)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

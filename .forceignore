@@ -8,5 +8,19 @@ package.xml
 **/jsconfig.json
 **/.eslintrc.json
 
+# These metadata files are ignored when pulling (retrieving)
+*.settings
+*.appMenu
+*.appSwitcher
+*.rule
+*.objectTranslation
+*.profile
+*.profilePasswordPolicy
+*.profileSessionSetting
+*.sharingRules
+*.AuthProvider
+
+
+
 # LWC Jest
 **/__tests__/**

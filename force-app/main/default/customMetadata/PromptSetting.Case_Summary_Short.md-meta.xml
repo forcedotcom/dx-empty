@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Case Summary_Short</label>
+    <protected>false</protected>
+    <values>
+        <field>ApexClassName__c</field>
+        <value xsi:type="xsd:string">AI_Case_Summary</value>
+    </values>
+    <values>
+        <field>EndpointURL__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Frequency_Penalty__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>Instructions__c</field>
+        <value xsi:type="xsd:string">I need you to summarize in less than 200 words a set of events and interactions regarding a client that is contacting our Customer Service Organization called BOBST. You will be presented first the original request, with important information about the customer, the account and the equipment as well as the subject of the issue, its current severity and status and people involved in this case. Then you will be presented a set of Interactions, Actions and events in a chronological order between the customer and the BOBST teams (Customer Service, Technical Service and Field Service).  Resume the case context and current status and point us to the most important and recent information to look at to continue with its resolution. You&apos;ll be writing the response in an HTML format. Use HTML tags to make the content clear and readable. For instance, use &lt;br&gt; for line breaks, and &lt;strong&gt; for emphasis, do not add \n in the response. The data to consider is hereafter :</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Max_Tokens__c</field>
+        <value xsi:type="xsd:double">10000.0</value>
+    </values>
+    <values>
+        <field>Named_Credential__c</field>
+        <value xsi:type="xsd:string">callout:GPT4oMini_OpenAI</value>
+    </values>
+    <values>
+        <field>Presence_Penalty__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:type="xsd:string">Standard</value>
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Temprature__c</field>
+        <value xsi:type="xsd:double">0.1</value>
+    </values>
+    <values>
+        <field>Top_P__c</field>
+        <value xsi:type="xsd:double">0.95</value>
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

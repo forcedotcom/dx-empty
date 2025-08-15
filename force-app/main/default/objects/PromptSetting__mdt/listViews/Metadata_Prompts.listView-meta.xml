@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metadata_Prompts</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Named_Credential__c</columns>
+    <columns>Top_P__c</columns>
+    <columns>Temprature__c</columns>
+    <columns>Max_Tokens__c</columns>
+    <columns>IsActive__c</columns>
+    <columns>Frequency_Penalty__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Metadata Prompts</label>
+    <language>en_US</language>
+</ListView>

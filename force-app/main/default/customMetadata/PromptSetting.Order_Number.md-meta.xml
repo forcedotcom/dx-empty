@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomMetadata
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+    <label>Order Number</label>
+    <protected>false</protected>
+    <values>
+        <field>Instructions__c</field>
+        <value
+      xsi:type="xsd:string"
+    >Based on the conversation between the customer and agent, determine if there is a order number present. Typically, an order number starts with #
+
+Your answer will be only 1 word, the order number (if there is one present), nothing else. No point at the end of the word.
+If there is no order number present, answer: No Order  Number</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomMetadata
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+    <label>Meeting Notes</label>
+    <protected>false</protected>
+    <values>
+        <field>Instructions__c</field>
+        <value
+      xsi:type="xsd:string"
+    >Reorganize the provided meeting notes using the following structured template to enhance readability and coherence. Ensure you strictly adhere to the content of the original notes, avoiding the addition of any new information:
+
+Meeting Title: Provide a clear and concise title that reflects the main objective or theme of the meeting.
+Date and Time: Note the specific date and time the meeting took place.
+Attendees: List the names and roles of all participants present at the meeting.
+Agenda Overview: Briefly summarize the main topics or objectives outlined in the meeting agenda.
+Discussion Points:
+Topic [1]:
+Key points discussed
+Decisions made
+Action items and responsible parties
+Topic [2]: [Repeat the structure for each topic discussed]
+Action Items:
+Item 1: [Action description, responsible person, deadline]
+Item 2: [Repeat for each action item]
+Closing Summary: Summarize the main outcomes of the meeting and any final remarks.
+Next Meeting: If applicable, note the scheduled date, time, and focus for the next meeting.
+
+Your task is to fill in this template with the content from the original meeting notes, ensuring each section accurately reflects the discussions and outcomes as they occurred. If something did not occur, do not add it.</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:type="xsd:string">Standard</value>
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

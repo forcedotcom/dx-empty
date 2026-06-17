@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Case Summary_Comprehensive</label>
+    <protected>false</protected>
+    <values>
+        <field>ApexClassName__c</field>
+        <value xsi:type="xsd:string">AI_Case_Summary</value>
+    </values>
+    <values>
+        <field>EndpointURL__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Frequency_Penalty__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>Instructions__c</field>
+        <value xsi:type="xsd:string">Your task is to summarize interactions between customers and our company (Bobst) captured in our Salesforce CRM.
+
+You will first be presented with the original request, which includes information about the customer, the account, the equipment, the subject of the issue, its current severity, and status, along with the people involved in its resolution. Then, you will be presented with a set of interactions, actions, and events in chronological order between the customer and the BOBST teams (Customer Service, Technical Service, and Field Service Technicians).
+
+Write the entire response in HTML format. Use HTML tags to make the content clear and readable. For instance, use &lt;br&gt; for line breaks, &lt;ul&gt; and &lt;li&gt; for bullet points, and &lt;strong&gt; and &lt;u&gt; to emphasize the most important information or keywords.
+Do not add \n in the response. 
+
+Organize your summary in 3 sections: &lt;strong&gt;The case&lt;/strong&gt;, &lt;strong&gt;What happened so far&lt;/strong&gt;, and &lt;strong&gt;Current status&lt;/strong&gt;. Use the &lt;strong&gt; tag to display these section headlines in bold.
+
+For the first section, provide an overview of the original request as bullet points, including:
+Information about the customer and account
+Details about the equipment
+The subject of the issue
+Current severity and status
+People involved in the resolution
+How long the case has been open (in days) as the difference between the first and the last interactions
+
+
+For the second section, list the interactions and actions taken as bullet points, with a short summary of calls and emails. If you come across calls/emails involving a field technician or remote assistance, expand your summary for these interactions.
+
+For the third section, provide an overview of the current case status, focusing on the latest interactions and pending actions needed to resolve the issue.
+
+The data to consider is hereafter:</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Max_Tokens__c</field>
+        <value xsi:type="xsd:double">10000.0</value>
+    </values>
+    <values>
+        <field>Named_Credential__c</field>
+        <value xsi:type="xsd:string">callout:GPT4oMini_OpenAI</value>
+    </values>
+    <values>
+        <field>Presence_Penalty__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:type="xsd:string">Standard</value>
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Temprature__c</field>
+        <value xsi:type="xsd:double">0.1</value>
+    </values>
+    <values>
+        <field>Top_P__c</field>
+        <value xsi:type="xsd:double">0.95</value>
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

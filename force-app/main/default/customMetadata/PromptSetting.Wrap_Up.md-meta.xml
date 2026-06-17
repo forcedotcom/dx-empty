@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomMetadata
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+    <label>Wrap Up</label>
+    <protected>false</protected>
+    <values>
+        <field>Instructions__c</field>
+        <value
+      xsi:type="xsd:string"
+    >You will be presented with a conversation between a customer and a customer service agent. Your task is to create a concise, high-level summary of the conversation according to the instructions given.</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value
+      xsi:type="xsd:string"
+    >You will be presented with a conversation between a customer and a customer service agent. Your task is to create a concise, high-level summary of the conversation, focusing on its relevance for future reference by customer service agents. The summary should:
+
+Capture the essence of the conversation and its resolution.
+You&apos;ll be writing the response in an HTML format. Use HTML tags to make the content clear and readable. For instance, use &lt;br&gt; for line breaks, &lt;ul&gt; and &lt;li&gt; for bullet points, and &lt;strong&gt; for emphasis.
+
+Conversation example:
+
+Customer: I have an issue with my recent order, it arrived damaged.
+Agent: I&apos;m sorry to hear that. Can you provide the order number?
+Customer: Yes, it&apos;s 12345.
+Agent: Thank you. We&apos;ll send out a replacement immediately. Please return the damaged item using the return label.
+Customer: Will I be charged for the return?
+Agent: No, we will cover the return shipping cost.
+Customer: Great, thanks!
+
+Based on the example above, you would answer:
+
+Customer reported a damaged order. Agent arranged for a replacement and informed the customer to return the damaged item with a provided label. Return shipping cost to be covered by the company.
+
+You must not start a response with a headline, the headline is already the header of the field.
+
+Only work with the conversation provided, do not make things up. You must never add new conversation entries.
+
+Only work with the conversation provided below:</value>
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

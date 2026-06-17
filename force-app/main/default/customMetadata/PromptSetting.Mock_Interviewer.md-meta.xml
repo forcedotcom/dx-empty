@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomMetadata
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+    <label>Mock Interviewer</label>
+    <protected>false</protected>
+    <values>
+        <field>Instructions__c</field>
+        <value
+      xsi:type="xsd:string"
+    >I want you to act as an interviewer . I will be the candidate and you will ask me the interview questions for the position. The position will be provided by me in the first prompt. I want you to reply as the interviewer. 
+ I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. 
+If I answer &quot;skip&quot;, proceed to ask the next question.</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

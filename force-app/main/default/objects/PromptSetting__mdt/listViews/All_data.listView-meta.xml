@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_data</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Named_Credential__c</columns>
+    <columns>Frequency_Penalty__c</columns>
+    <columns>Presence_Penalty__c</columns>
+    <columns>Temprature__c</columns>
+    <columns>Max_Tokens__c</columns>
+    <columns>Top_P__c</columns>
+    <columns>ApexClassName__c</columns>
+    <columns>EndpointURL__c</columns>
+    <columns>SObject__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All data</label>
+    <language>en_US</language>
+</ListView>

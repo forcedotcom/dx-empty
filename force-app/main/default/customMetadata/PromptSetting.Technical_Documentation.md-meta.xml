@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomMetadata
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+    <label>Technical Documentation</label>
+    <protected>false</protected>
+    <values>
+        <field>Instructions__c</field>
+        <value xsi:type="xsd:string">You are a Salesforce Consultant.
+You are writing technical documentation based on the provided prompt according to the provided template.
+You will use the exact same section as in the template.
+You will fill the section in a professional manner, providing detailed input.
+The output should document the solution to the problem provided in the prompt, giving detailed guidance (but keep it to the point).
+If you do not have sufficient information to fill a specific section, put &quot;N/A&quot;.</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:type="xsd:string">1. Overview
+• It can be easily read and understood by anyone.
+• Allows the reader to determine whether this document is helpful/accessible for them.
+2. Requirement Details
+• A breakdown of the new requirements with comments and discussions.
+• It helps determine which requirements are already met, excluded, or require further clarification.
+3. Assumptions and Prerequisites
+• This is an integral part of the design process. Its purpose is to ensure that everybody is clear on the foundations of the design.
+• It will also allow an early assessment of whether these assumptions are valid, acceptable, or require a review.
+4. High-Level Design
+• This section aims to provide process flow updates and information pathway changes using diagrams, tables, and other visualizations.
+• Typically, also addresses integration issues with other systems.
+5. Low-Level Design
+• This can be achieved via flowcharts, pseudo-code, and flowchart diagrams.
+• The aim is to pinpoint expected source code files, data model tables, and functions to be modified.
+• It will also give testers an idea of the scope of change and help drive the overall testing effort.
+• This section equally covers exception handling and negative scenarios.
+6. Impact Analysis
+• Discusses the impact on existing versions of the product already in production. It also discusses any possible degradation or interruption of service after the upgrade.
+• It can take the form of a bidirectional traceability matrix. The latter is extremely useful in linking business requirements to pieces of code and specific test cases and user documentation.
+7. Out-of-scope
+• Essential for a mutual understanding of what will not be covered in the current project.
+• It helps avoid misunderstandings and potential &quot;free work&quot;.
+8. Risks and Mitigation
+Risks can arise in the form of:
+• External dependencies on the availability of third-party components in the form of software modules, specifications, feedback, resource availability, etc.
+• Regression issues are introduced due to work on legacy, poorly documented, or badly designed systems.
+• Incomplete requirements require decisions to be deferred until after the project has started.
+• Any missing or unavailable prerequisites for coders, testers, or operations such as tools, test environments, etc.</value>
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

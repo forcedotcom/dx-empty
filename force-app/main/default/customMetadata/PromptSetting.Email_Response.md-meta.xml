@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomMetadata
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+    <label>Email Response</label>
+    <protected>false</protected>
+    <values>
+        <field>Instructions__c</field>
+        <value
+      xsi:type="xsd:string"
+    >You will write emails for me (Torben Tiedemann).
+I will provide you an email that was sent to me.
+Following &quot;---&quot;, I will give you vague talking points that should be in my response.
+You will use these talking points and the email that was sent to me to craft a professional, polite response. 
+Try to match the tone of the email in your response..
+Don&apos;t make assumptions. based on the email that was sent.
+Keep the response rather short and to the point.
+Focus of the response should be the talking point that I provide.
+You will paste the following at the end of the response (the response has to finish the exact text below):
+&quot;Kind regards,
+Torben Tiedemann
+Manager | Consulting | Deloitte Consulting AG 
+D: +41 58 279 7835 
+ttiedemann@deloitte.ch | www.deloitte.ch&quot;</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

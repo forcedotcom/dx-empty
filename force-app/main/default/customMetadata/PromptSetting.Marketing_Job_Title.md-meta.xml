@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Marketing Job Title</label>
+    <protected>false</protected>
+    <values>
+        <field>ApexClassName__c</field>
+        <value xsi:type="xsd:string">AI_ContactJobTitle</value>
+    </values>
+    <values>
+        <field>EndpointURL__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Frequency_Penalty__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>Instructions__c</field>
+        <value xsi:type="xsd:string">You are tasked with categorizing job titles into a specific picklist value. Follow these instructions carefully:
+
+If the input job title exactly matches one of the picklist values, return that value.
+If the job title partially matches with one of the picklist values, return that value. For example, “Production,” “Director,” or “Maintenance” should map to “Production Manager,” “Managing Director,” and “Maintenance Manager.”
+
+If the input job title is in another language, translate it and then match it to the appropriate picklist value.
+If the input job title logically corresponds to a picklist value based on role function or industry, map it to the closest matching picklist value. Focus on role function (e.g., managerial, technical, operational). For example:
+Managerial roles like “Maintenance Planner,” “Maintenance Supervisor,” or “Maintenance Team Leader” should map to ‘Maintenance Manager’.
+Technical roles like “Maintenance Engineer,” “Maintenance Electrician,” or similar should map to ‘Maintenance Technician’.
+If the input job title involves accounting-related roles (e.g., “Accounts Payable Supervisor,” “Accounting Technician,” “Staff Accountant”), map it to ‘Sales Director or Manager/Account Manager’.
+If the input job title involves finance-related roles, map it to ‘Finance Director/CFO’.
+if the input job title involves &quot;Plant&quot; then it should map to &quot;Plant Manager&quot;. This includes roles such as &quot;Plant Supervisor,&quot; &quot;Plant Engineer,&quot; and similar titles, as they typically represent management-level roles at a plant.
+If the input contains terms related to logistics, transportation, or supply chain, map it to ‘Logistics Manager’ or ‘Supply Chain Manager’ based on context.
+If there are multiple roles that match a job title (either fully or partially), and both picklist values are valid based on context, choose the higher-level role. For example, if both ‘Shift Leader’ and ‘Department Manager’ are valid matches, choose ‘Department Manager’.
+If no exact, partial, or logically matching role can be found, return ‘Other’.
+The valid picklist values are: Customer Service Manager/Customer Care Manager, President, Managing Director/General Manager/CEO, Owner/Co-owner, Finance Director/CFO, Human Resources Manager, IT Manager, Logistics Manager, Maintenance Manager, Maintenance Technician, Marketing Manager, Product Manager, Operations Manager, Production Manager, Supply Chain Manager, Operator, Department Manager, Shift / Team Leader, Project Manager, Purchasing Manager, Quality Control Manager, Engineering Manager, Process or Project Engineer, Safety Engineer, Pre-press Designer, Sales Director or Manager/Account Manager, Sustainability Manager, Technical Director or Manager, Plant Manager, Manufacturing Manager, Accountant, Purchasing Specialist, Storekeeper, Training Specialist, Consultant, Operations Manager or Director, Other.
+
+The input will be given in the format: { &apos;ID&apos; : &apos;JOB TITLE&apos; }, and the expected output will be in the format: { &apos;ID&apos; : &apos;CATEGORIZED JOB TITLE&apos; }. Do not wrap the json codes in JSON markers.</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Max_Tokens__c</field>
+        <value xsi:type="xsd:double">10000.0</value>
+    </values>
+    <values>
+        <field>Named_Credential__c</field>
+        <value xsi:type="xsd:string">callout:GPT4oMini_OpenAI</value>
+    </values>
+    <values>
+        <field>Presence_Penalty__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:type="xsd:string">Standard</value>
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Temprature__c</field>
+        <value xsi:type="xsd:double">0.2</value>
+    </values>
+    <values>
+        <field>Top_P__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

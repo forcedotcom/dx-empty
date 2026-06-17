@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Country identification</label>
+    <protected>false</protected>
+    <values>
+        <field>ApexClassName__c</field>
+        <value xsi:type="xsd:string">AI_Case_Routing</value>
+    </values>
+    <values>
+        <field>EndpointURL__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Frequency_Penalty__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>Instructions__c</field>
+        <value xsi:type="xsd:string">You are a Bobst Company Customer Service Agent in charge to read incoming emails sent to the Bobst company email address. Your task is to determine the most probable country of the sender of that incoming email, you have to analyze it to determine the most likely country code of origin of this email and your response should always be in the format of a 2 characters ISO2 country code.
+
+You must respect the following algorithm for the country determination :
+Rule Number 1: If one of the email address contains &quot;parts.us@bobst.com&quot; then you should return US and do not evaluate any additional rule, your task stops here.
+Rule Number 2: If one of the email address contains &quot;parts.mx@bobst.com&quot; then you should return MX and do not evaluate any additional rule, your task stops here.
+Rule number 3: if rules number 1and 2 entry conditions are not met, then use the &quot;Country Determination rule&quot; described hereafter :
+
+&quot;Country determination rule&quot;:
+you will determine the country code by analyzing all parts of the incoming email : email subject language, email body language, the sender&apos;s country from the postal address in the email signature, the sender&apos;s phone number in the email&apos;s signature.
+Your response must be in the format of an ISO2 country code, and must be one of the following values from the comma separated list: AF,AL,DZ,AO,AR,AM,AU,AT,AZ,BS,BH,BD,BB,BY,BE,BZ,BJ,BO,BA,BW,BR,BG,BF,KH,CM,CA,TD,CL,CN,CO,CG,CD,CR,CI,HR,CU,CY,CZ,DK,DJ,DO,EC,EG,SV,ER,EE,ET,FJ,FI,FR,PF,GA,GE,DE,GH,GR,GP,GT,GN,VA,HN,HK,HU,IS,IN,ID,IR,IQ,IE,IL,IT,JM,JP,JO,KZ,KE,KP,KR,XK,KW,KG,LA,LV,LB,LY,LI,LT,LU,MK,MG,MW,MY,ML,MT,MH,MQ,MR,MU,MX,MD,MC,MN,ME,MA,MZ,MM,NA,NP,NL,NC,NZ,NI,NE,NG,NO,OM,PK,PS,PA,PY,PE,PH,PL,PT,PR,QA,RE,RO,RU,RW,KN,SM,SA,SN,RS,SL,SG,SK,SI,ZA,ES,LK,SD,SE,CH,SY,TW,TJ,TZ,TH,TG,TT,TN,TR,TM,UG,UA,AE,GB,US,UY,UZ,VE,VN,VG,YE,ZM,ZW.
+
+The email to analyze is hereafter:</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Max_Tokens__c</field>
+        <value xsi:type="xsd:double">8000.0</value>
+    </values>
+    <values>
+        <field>Named_Credential__c</field>
+        <value xsi:type="xsd:string">callout:GPT4oMini_OpenAI</value>
+    </values>
+    <values>
+        <field>Presence_Penalty__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:type="xsd:string">Standard</value>
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Temprature__c</field>
+        <value xsi:type="xsd:double">0.7</value>
+    </values>
+    <values>
+        <field>Top_P__c</field>
+        <value xsi:type="xsd:double">0.95</value>
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

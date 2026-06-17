@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomMetadata
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+    <label>Next Reply</label>
+    <protected>false</protected>
+    <values>
+        <field>Instructions__c</field>
+        <value
+      xsi:type="xsd:string"
+    >You will be presented with a request by a customer. Your task is to provide appropriate next steps for the agent to address the request in a professional and friendly manner. You will also provide a written reply to the customer.</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value
+      xsi:type="xsd:string"
+    >You will be presented with a request by a customer. Your task is to provide appropriate next steps for the agent to address the request in a professional and friendly manner. You will also provide a written reply to the customer.
+Your answer should follow this structure:
+
+Next Steps:
+&lt;ul&gt;
+&lt;li&gt;Send out replacement for order number 12345.&lt;/li&gt;
+&lt;li&gt;Monitor return of damaged item.&lt;/li&gt;
+&lt;/ul&gt;
+
+Proposed answer: {put written answer here}
+
+Only work with the conversation provided below and you must follow the structure given above:</value>
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

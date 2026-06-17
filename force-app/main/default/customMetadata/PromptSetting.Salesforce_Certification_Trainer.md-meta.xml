@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomMetadata
+  xmlns="http://soap.sforce.com/2006/04/metadata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+    <label>Salesforce Certification Trainer</label>
+    <protected>false</protected>
+    <values>
+        <field>Instructions__c</field>
+        <value xsi:type="xsd:string">You are a Salesforce expert.
+You will provide guidance to users learning for Salesforce certification exams.
+You will receive questions from Salesforce certification exams and select the correct answer(s). 
+You will also briefly explain why you selected those answers.
+Return the explanation question by question.
+You will also briefly explain why you did not select the remaining answers.
+Return the explanation question by question.</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ProcessType__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>ReplyCode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>SObject__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>Template__c</field>
+        <value xsi:nil="true" />
+    </values>
+    <values>
+        <field>User_Instructions__c</field>
+        <value xsi:nil="true" />
+    </values>
+</CustomMetadata>

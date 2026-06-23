@@ -1,0 +1,54 @@
+name: Run Code Analyzer 5 Workflow
+on:
+ workflow_dispatch:
+   inputs:
+     config_branch:
+       description: 'Config branch'
+       required: false
+       default: ''     
+
+
+jobs:
+ salesforce-code-analyzer-workflow:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+          node-version: '>=20'
+
+
+    - name: Check out files
+      uses: actions/checkout@v4
+
+
+    - name: Checkout config file from target branch
+      if: ${{ inputs.config_branch != '' }}
+      run: |
+         cd $GITHUB_WORKSPACE
+         git fetch
+         git checkout origin/${{inputs.config_branch}} .github/workflows/config/code-analyzer-config.yml
+        
+    - name: Install Salesforce CLI
+      run: npm install -g @salesforce/cli@latest
+
+
+    - name: Setup Code Analyzer 5
+      run: sf plugins install code-analyzer@latest
+     
+    - name: Run Code analyzer
+      id: run-code-analyzer
+      uses: forcedotcom/run-code-analyzer@v2
+      with:
+        run-arguments: --workspace . --config-file .github/workflows/config/code-analyzer-config.yml --output-file results.html
+        results-artifact-name: salesforce-code-analyzer-v5-results
+
+
+
+
+    - name: Check the outputs to determine whether to fail
+      if: |
+        steps.run-code-analyzer.outputs.exit-code > 0 ||
+        steps.run-code-analyzer.outputs.num-sev1-violations > 0 ||
+        steps.run-code-analyzer.outputs.num-violations > 10
+      run: exit 1

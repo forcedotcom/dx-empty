@@ -1,0 +1,26 @@
+name: Sync Code Analyzer Tests Workflow
+on: workflow_dispatch
+jobs:
+ salesforce-code-analyzer-workflow:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Check out files
+       uses: actions/checkout@v4
+
+
+     - name: Install Salesforce CLI
+       run: npm install -g @salesforce/cli@latest
+
+
+     - name: Setup Code Analyzer 5
+       run: sf plugins install code-analyzer
+
+
+     - name: Get Code Analyzer V5 rules
+       run: sf code-analyzer rules --config-file .github/workflows/config/code-analyzer-config.yml --rule-selector=all -v table > ca-v5-rules.txt
+
+
+     - uses: actions/upload-artifact@v4
+       with:
+         name: code-analyser5-tests
+         path: ./ca-v5-rules.txt
